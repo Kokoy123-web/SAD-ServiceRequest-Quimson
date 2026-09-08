@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | ICT Service Desk</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-page">
+  <div class="bg-orb orb-one"></div>
+  <div class="bg-orb orb-two"></div>
+  <div class="bg-grid"></div>
+  <main class="login-shell">
+    <section class="login-copy">
+      <p class="eyebrow">UNIVERSITY ICT OFFICE</p>
+      <h1>Technical problems,<br><span>organized.</span></h1>
+      <p>One place for requests, status updates, priorities, and accountability.</p>
+      <div class="feature-stack">
+        <div>01 <strong>Submit</strong><span>Describe your ICT concern.</span></div>
+        <div>02 <strong>Track</strong><span>Monitor request status.</span></div>
+        <div>03 <strong>Resolve</strong><span>Close the loop efficiently.</span></div>
+      </div>
+    </section>
+
+    <section class="login-card">
+      <div class="login-logo">⌁</div>
+      <p class="eyebrow">SERVICE REQUEST SYSTEM</p>
+      <h2>Welcome back.</h2>
+      <p class="muted">Sign in to manage your ICT requests.</p>
+      <form id="loginForm">
+        <label class="field">
+          <span>Email</span>
+          <input id="email" type="email" required autocomplete="email" placeholder="student@example.com">
+        </label>
+        <label class="field">
+          <span>Password</span>
+          <input id="password" type="password" required minlength="6" autocomplete="current-password" placeholder="••••••••">
+        </label>
+        <div id="loginError" class="form-error hidden"></div>
+        <button class="btn btn-primary btn-full" type="submit">Sign In →</button>
+      </form>
+      <p class="login-note">Use an account prepared by your instructor or a test account created in Supabase Auth.</p>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
